@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/Logomark.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Charitee</title>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-calistoga: "Calistoga", serif;
+        --font-inter: "Inter", sans-serif;
+        --color-DarkGreen: #244d3b;
+        --color-Green: #d3e9c4;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between items-center p-4 border-b border-slate-200"
+    >
+      <div class="flex items-center gap-2">
+        <img src="/Logomark.png" alt="Logo" />
+        <span class="font-calistoga text-2xl">Charitee</span>
+      </div>
+      <div class="hidden md:block">
+        <ul class="flex gap-10 font-inter">
+          <li class="cursor-pointer">Camapigns</li>
+          <li class="cursor-pointer">About Us</li>
+          <li class="cursor-pointer">Resources</li>
+          <li class="cursor-pointer">How It Works</li>
+        </ul>
+      </div>
+      <div class="md:flex hidden gap-2">
+        <button
+          class="bg-Green px-6 py-2 rounded-full text-DarkGreen cursor-pointer"
+        >
+          Login
+        </button>
+
+        <button
+          class="bg-DarkGreen px-6 py-2 rounded-full text-Green cursor-pointer"
+        >
+          Contact Us
+        </button>
+      </div>
+
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="text-DarkGreen p-2">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 pt-20">
+          <div class="flex flex-col items-center gap-6 font-inter">
+            <button
+              id="close-menu"
+              class="absolute top-4 right-4 text-DarkGreen"
+            >
+              <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <a href="#" class="text-lg">Camapigns</a>
+            <a href="#" class="text-lg">About Us</a>
+            <a href="#" class="text-lg">Resources</a>
+            <a href="#" class="text-lg">How It Works</a>
+            <div class="flex flex-col gap-3 mt-4">
+              <button class="bg-Green px-6 py-2 rounded-full text-DarkGreen">
+                Login
+              </button>
+              <button class="bg-DarkGreen px-6 py-2 rounded-full text-Green">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="text-center py-[5%] px-[3%]">
+      <h1
+        class="font-calistoga md:text-6xl text-4xl w-[80%] md:w-[50%] mx-auto"
+      >
+        A Simple Act Can Shape A Better Future
+      </h1>
+      <p
+        class="w-[70%] md:w-[40%] md:text-lg text-sm mx-auto font-inter mt-4 leading-loose text-slate-600"
+      >
+        Through acts of giving, we nurture hope, bridge divides, and empower
+        communities to create a brighter future.
+      </p>
+
+      <div class="flex gap-2 items-center justify-center mt-4">
+        <button
+          class="bg-DarkGreen px-6 py-2 rounded-full text-Green cursor-pointer"
+        >
+          Donate Now
+        </button>
+        <button
+          class="bg-Green px-6 py-2 rounded-full text-DarkGreen cursor-pointer"
+        >
+          View Our Program
+        </button>
+      </div>
+    </header>
+
+    <section class="py-[5%] pt-[0] px-[3%] relative">
+      <img
+        src="/joel-muniz-BErJJL_KsjA-unsplash.jpg"
+        alt="image"
+        class="rounded-2xl"
+      />
+
+      <div
+        class="bg-white hidden md:block md:absolute md:top-[10%] md:left-[5%] md:max-w-[25%] p-4 rounded-2xl"
+      >
+        <h2 class="font-calistoga text-4xl">
+          Help us feed a child, draw a smile on his face
+        </h2>
+        <img src="/Group 2085662594.png" alt="image" class="w-full mt-4" />
+      </div>
+
+      <div
+        class="bg-white md:absolute md:bottom-[10%] md:right-[5%] md:w-[30%] p-4 md:p-6 rounded-2xl"
+      >
+        <h2 class="font-calistoga text-4xl text-center">$12,800,000</h2>
+        <div class="w-full h-2 bg-gray-200 rounded-full mt-4">
+          <div
+            class="h-full bg-DarkGreen rounded-full"
+            style="width: 60%"
+          ></div>
+        </div>
+        <div
+          class="flex justify-between font-inter text-slate-600 border-b py-2 border-slate-200"
+        >
+          <span><strong class="text-black">6541</strong> Investors</span>
+          <span>60%</span>
+        </div>
+        <p class="font-inter text-slate-800 mt-4">
+          Help Restore Flood-Affected Settlements.
+        </p>
+        <div class="flex gap-2 items-center mt-4">
+          <button
+            class="bg-DarkGreen px-6 py-2 rounded-full text-Green cursor-pointer"
+          >
+            Donate Now
+          </button>
+          <button
+            class="bg-Green px-6 py-2 rounded-full text-DarkGreen cursor-pointer"
+          >
+            Sign Up Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-wrap gap-4 justify-between items-center p-4 px-0 mx-[3%] border-t border-slate-200"
+    >
+      <div class="flex items-center">
+        <div class="flex relative">
+          <img src="/Icon.png" alt="icon" />
+          <img src="/Icon2.png" alt="icon" class="absolute z-10 left-[25px]" />
+          <img src="/Icon3.png" alt="icon" class="absolute z-100 left-[50px]" />
+        </div>
+        <span class="ml-[60px] font-inter text-slate-600"
+          >+19,000 People Smile Because of Kins Acts</span
+        >
+      </div>
+      <div>
+        <button
+          class="bg-Green px-6 py-2 rounded-full text-DarkGreen cursor-pointer"
+        >
+          See how it works
+        </button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
